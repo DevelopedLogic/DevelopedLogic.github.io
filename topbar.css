@@ -10,6 +10,7 @@ body{
     font-family: sans-serif;
     text-align: center;
     display: flex;
+    width: 100%;
 }
 .topbar a{
     /*<a> tag main settings*/
