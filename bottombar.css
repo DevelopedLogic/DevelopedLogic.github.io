@@ -1,0 +1,53 @@
+body{
+    margin: 0;
+}
+
+.bottombar{
+    /*undefined tag main settings*/
+    background-color: rgb(0, 11, 77);
+    color: rgb(255, 255, 255);
+    font-size: 10px;
+    font-family: sans-serif;
+    text-align: center;
+    display: flex;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+.bottombar a{
+    /*<a> tag main settings*/
+    text-decoration: none;
+    background-color: rgb(0, 0, 255);
+    color: rgb(255, 255, 255); /*double required to override link colours*/
+    border-bottom: 4px solid rgb(0, 0, 255);
+    border-top: 4px solid rgb(0, 0, 255);
+    padding-left: 4px;
+    padding-right: 4px;
+    transition: all ease 0.3s;
+    margin-right: 8px;
+}
+.bottombar:hover a{
+    border-top: 4px solid rgb(253, 168, 168);
+}
+.bottombar a:hover{
+    border-top: 4px solid rgb(255, 0, 0);
+}
+.copyright{
+    padding: 4px;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+@media(max-width: 800px){
+    .bottombar{
+        flex-direction: column;
+        align-items: stretch;
+    }
+    .bottombar a{
+        margin-right: 0px;
+        margin-bottom: 8px;
+    }
+    .bottombar a:last-child{ /*this is the last child of bottombar which is an <a> tag*/
+        margin-bottom: 0;
+    }
+}

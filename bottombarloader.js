@@ -1,0 +1,1 @@
+$("#infobar").load( "/bottombar.html" );
